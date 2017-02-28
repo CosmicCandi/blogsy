@@ -21,13 +21,13 @@
     user: user
     )
 
-  (1..5).to_a.sample.times do
-    comment = Comment.create!(
-      body: Faker::TwinPeaks.quote,
-      user: user,
-      post: post
-    )
-  end
+  # (1..5).to_a.sample.times do
+  #   comment = Comment.create!(
+  #     body: Faker::TwinPeaks.quote,
+  #     user: user,
+  #     post: post
+  #   )
+  # end
 
   end
 end
