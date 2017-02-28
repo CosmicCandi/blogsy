@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  has_many :posts, counter_cache: true
+  has_many :posts
   validates :username, :email, presence: true
 
 end
