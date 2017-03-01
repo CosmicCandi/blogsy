@@ -2,15 +2,15 @@ Rails.application.routes.draw do
 
 
   #Users Routes
-  get '/users' => 'blogsy#users'
-  post '/users' => 'blogsy#create'
-  get 'users/:id/posts' => 'blogsy#show_posts_by_user_id'
+  get '/users' => 'user#index'
+  post '/users' => 'user#create'
+  get 'users/:id/posts' => 'user#show'
 
   #Posts Routes
-  get '/posts' => 'blogsy#posts'
-  get '/posts/:id' => 'blogsy#show_post_by_id'
-  get 'posts/:id/comments/' => 'blogsy#show_post_comments_by_post_id'
-  delete 'posts/:id' => 'blogsy#destroy'
+  get '/posts' => 'post#posts'
+  get '/posts/:id' => 'post#show'
+  get 'posts/:id/comments/' => 'post#show_comments_by_post_id'
+  delete 'posts/:id' => 'post#destroy'
 
   #Comments Routes
 
