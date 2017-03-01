@@ -37,7 +37,9 @@ class BlogsyController < ApplicationController
 
   def destroy
     @destroyer_of_posts = Post.find(params[:id])
-    @destroyer_of_posts.destroy  end
+    @destroyer_of_posts.destroy
+    render json: {}, status: 200
+    end
 
   private
 
